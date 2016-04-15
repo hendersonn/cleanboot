@@ -3,6 +3,8 @@
 #Matt Henderson, 2015
 #twitter: @hendersonn
 #######################
+while true
+do
 clear
 tput bold
 tput setaf 7
@@ -25,10 +27,13 @@ echo -e -n " sudo apt-get purge linux-image-X.XX.X-XX "
 tput setaf 7
 echo -e "\" to remove old kernels."
 echo "(Perhaps in a seperate terminal, keeping this up for reference)"
+echo "Screen will refresh every five seconds, [Ctrl + C] to exit."
 echo ""
 echo -n "Take care as to not remove current kernel of " && tput setaf 1 && uname -r
 tput sgr0
 echo ""
 echo ""
+sleep 5
+done
 
 #Open second terminal for "apt-get" command, keeping this up for reference.
